@@ -3,8 +3,19 @@
 $ref=@$_SERVER[HTTP_REFERER]; //A meghívó oldal url-je
 $url=parse_url($ref, PHP_URL_HOST); //A meghívó hostja
 
-//echo "<p>Referrer of this page= $ref</p>"; //teszt
-//echo "<p>Referrer host is $url</p>"; // teszt
+//A browser beállított nyelvei
+$languages=explode(',',$_SERVER[HTTP_ACCEPT_LANGUAGE]);
+if (in_array("hu",$languages)) {
+    // echo "<p>Ért magyarul.</p>";
+    //ide kell betülteni a magyar nyelvi fájlt.
+    include_once 'languages/lang_hu.php';
+} else {
+    include_once 'languages/lang_en.php';
+}
+
+//echo $lang['PAGE_TITEL'];
+echo "<p>Referrer of this page= $ref</p>"; //teszt
+echo "<p>Referrer host is $url</p>"; // teszt
 
 if ($url=="www.22s.com") {
     //echo "Yes"; //itt kellene lefutnia a Facebook Live kódnak
@@ -41,13 +52,13 @@ if ($url=="www.22s.com") {
                     <img src='profile-4-mobile-icon.jpg' style='width:75px;height:75px;'>
                 </div>
                 <div class='head-right'>
-                <h1>Online, ahogy Einstein csinálná<br>
-                Élő videóközvetítés a Facebookon</h1>
+                <h1>Online On Einstein-way<br>
+                Live Stream To Facebook</h1>
                 </div>
             </div>
 
             <h2>Don't forget allow the pop-up in this page!</h2>
-            <p><button id='liveButton' class='button huge green-gradient'>Élő videóközvetítés létrehozása</button></p>
+            <p><button id='liveButton' class='button huge green-gradient'>Create Live Stream To Facebook</button></p>
             <p>
             <script type='text/javascript'>
                 document.getElementById('liveButton').onclick = function() {
@@ -72,8 +83,8 @@ if ($url=="www.22s.com") {
                 });
                 };
             </script></p>
-            <p class='footer'>© Copyright 2016, Klára Sajben & Gyula Pálfi<br>
-            All Right Reserved! Különösen tilos az oldal másolása, a kód visszafejtése, felhasználása!</p>
+            <p class='footer'>© Copyright 2016, Klara Sajben & Gyula Palfi All Right Reserved,
+            <br>Attention, copying and reverse engineering is not permitted!</p>
         </div>
         </body>
     ";
@@ -93,34 +104,33 @@ if ($url=="www.22s.com") {
                     <img src='profile-4-mobile-icon.jpg' style='width:75px;height:75px;'>
                 </div>
                 <div class='head-right'>
-                <h1>Online, ahogy Einstein csinálná<br>
-                Élő videó közvetítés a Facebookon</h1>
+                <h1>Online On Einstein-way<br>
+                Live Stream To Facebook</h1>
                 </div>
             </div>
             
-            <h2>Nincs hozzáférési jogod ehhez a szolgáltatáshoz!</h2>
+            <h2>You Have No Right To Access This Service!</h2>
             
             <div class='box-member'>
-                <p>Ha van <b>élő előfizetésed</b>, akkor az <u>eredeti URL-t</u> használd!<br>
-                Kattints a gombra és próbáld újra!</p>
+                <p>If you <b>have a live subscription</b>, use the <u>original URL only</u>!<br>
+                Click this button and try again!</p>
 
                 <p><a href='https://www.22s.com/022n3j' target='_blank'>
-                <button type='button' class='button huge red-gradient'>Kattints a helyes linkért</button>
+                <button type='button' class='button huge red-gradient'>Click For The Right URL</button>
                 </a>
             </div>
             <p>
             <div class='box-nonmember'>
-                <p>Ha <b>nem vagy előfizetője</b> a szolgáltatásunknak, akkor kattints a gombra és 
-                tanuld meg hogyan tudsz élő videót közvetíteni a <u>számítógépedről</u> 
-                a <b>saját hírfolyamodba</b>, egy <b>barátod hírfolyamába</b>, 
-                egy <b>csoportba</b> vagy egy általad menedzselt <b>oldalra</b>.</p>
+                <p>If you <b>aren't a member</b> of our subscription, click the 
+                button and learn how could you stream Live video from <u>your desktop</u> 
+                on your <b>own Timeline</b>, on a <b>friend's Timeline</b>, in a <b>group</b> or on a <b>Page</b> you manage.</p>
                 
                 <p><a href='https://www.22s.com/022n3j' target='_blank'>
-                <button type='button' class='button huge green-gradient'>Tudj meg többet!</button>
+                <button type='button' class='button huge green-gradient'>Learn More</button>
                 </a>
 
             </div>
-            <p class='footer'>© Copyright 2016, Klára Sajben & Gyula Pálfi<br>All Right Reserved</p>
+            <p class='footer'>© Copyright 2016, Klara Sajben & Gyula Palfi<br>All Right Reserved</p>
 
         </div>
         </body>
