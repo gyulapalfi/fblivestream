@@ -35,6 +35,6 @@ $lang['BUTTON_NO_SUBSC']    = 'Learn More!';
 
                                 
 // Copyright
-$lang['FOOTER_COPY']        = '©Copyright 2016, Klara Sajben & Gyula Palfi<br>All Right Reserved<br>Copying and reverse engineering is not permitted!';
+$lang['FOOTER_COPY']        = '©Copyright 2016, Klara Sajben & Gyula Palfi<br>All Right Reserved!<br>Copying and reverse engineering is not permitted!';
 
 ?>

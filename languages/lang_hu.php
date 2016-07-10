@@ -35,6 +35,6 @@ $lang['BUTTON_NO_SUBSC']    = 'Tudj meg többet!';
 
 
 // Copyright
-$lang['FOOTER_COPY']        = '©Copyright 2016, Sajben Klára & Pálfi Gyula<br>All Right Reserved<br>A másolása és a kód visszafejtése tiltott!';
+$lang['FOOTER_COPY']        = '©Copyright 2016, Sajben Klára & Pálfi Gyula<br>All Right Reserved!<br>A másolása és a kód visszafejtése tiltott!';
 
 ?>
