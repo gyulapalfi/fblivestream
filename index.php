@@ -40,7 +40,7 @@ session_start();
 $access = 0;    //Access or Not to this service
 $service_url = "https://www.22s.com/022n3j";
 $ref_url = "www.22s.com";   //The payed user from
-$campaign_id = "MDL9";  //GetResponse Campaign ID
+$campaign_id = "nWwBm"; // facebook_live Getresponse Campaign ID
 $loggedIn = 0;  // Logged is by Facebook?
 
 /*1st condition - check the referral url.
