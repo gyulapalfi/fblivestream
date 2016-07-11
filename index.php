@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__ . '/vendor/autoload.php';
+
+
 //A browser beállított nyelvei
 $languages=explode(',',$_SERVER[HTTP_ACCEPT_LANGUAGE]);
 if (in_array("hu",$languages)) {
@@ -59,7 +62,7 @@ if ($url==$ref_url) {
    // Facebook Login
    
    // Include the required dependencies.
-    require( __DIR__.'/facebook-php-sdk-v5/autoload.php' );
+    //require( __DIR__.'/facebook-php-sdk-v5/autoload.php' );
 
     // Initialize the Facebook PHP SDK v5.
     $fb = new Facebook\Facebook([
