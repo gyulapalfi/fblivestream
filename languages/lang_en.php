@@ -5,8 +5,8 @@ English
 */
 $lang = array();
 
-$lang['PAGE_TITEL']         = 'Online on Einstein-way';
-$lang['PAGE_SUBTITLE']      = 'Live stream to Facebook';
+$lang['PAGE_TITEL']         = 'Online On Einstein Way';
+$lang['PAGE_SUBTITLE']      = 'Live Stream To Facebook';
 
 $lang['USER']               = 'Name: ';
 $lang['EMAIL']              = 'Email: ';
